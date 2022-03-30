@@ -1,0 +1,44 @@
+{
+  "tests": [
+    {
+      "name": "test successfully builds",
+      "setup": "./configure",
+      "run": "make",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "task 00 examples",
+      "setup": "make",
+      "run": "./test --list-test-names-only [task00] | grep . && ./test [task00]",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "task 01 stacks and queues",
+      "setup": "make",
+      "run": "./test --list-test-names-only [task01] | grep . && ./test [task01]",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 40
+    },
+    {
+      "name": "task 02 recursion",
+      "setup": "make",
+      "run": "./test --list-test-names-only [task02] | grep . && ./test [task02]",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 40
+    }
+  ]
+}
